@@ -3,10 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <h1 id="page-title">Shopping List</h1>
   <link rel="stylesheet" href="style.css" />
+  <title>Shopping List</title>
 </head>
 <body>
+  <h1 id="page-title">Shopping List</h1>
+  <script src="script.js"></script>
+
   <div class="container">
     <h1><img src="https://img.icons8.com/emoji/48/clipboard-emoji.png" alt="icon"> Shopping List</h1>
 
@@ -14,16 +17,17 @@
       <input type="text" id="item-input" placeholder="Enter Item" />
       <button type="submit" class="btn">+ Add Item</button>
     </form>
+
     <div class="filter">
       <h3>Filter Items</h3>
       <input type="text" id="filter" placeholder="Search items..." />
     </div>
 
     <ul id="item-list" class="items">
-      <li class="item"> <strong>Apples</strong> <button class="remove-btn">✖</button> </li>
-      <li class="item"> <strong>Orange Juice</strong> <button class="remove-btn">✖</button> </li>
-      <li class="item"> <strong>Oreos</strong> <button class="remove-btn">✖</button> </li>
-      <li class="item"> <strong>Milk</strong> <button class="remove-btn">✖</button> </li>
+      <li class="item"> Apples <button class="remove-btn">✖</button> </li>
+      <li class="item"> Orange Juice<button class="remove-btn">✖</button> </li>
+      <li class="item"> Oreos<button class="remove-btn">✖</button> </li>
+      <li class="item"> Milk<button class="remove-btn">✖</button> </li>
     </ul>
 
     <button class="clear-btn">Clear All</button>
