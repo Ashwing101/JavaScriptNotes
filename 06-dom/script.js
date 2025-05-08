@@ -1,38 +1,33 @@
-//Get child element from the parent and if their respective
-//siblings
+// Quick - Dirty way to add element to Dom
 
-let output;
-
-const parent = document.querySelector('.parent');
-output = parent.children;
-//output = parent.children[1];
-output = parent.children[1].innerText;
-output = parent.children[1].className;
-output = parent.children[1].nodeName;
-
-parent.children[1].innerText= 'Child Text';
-parent.children[1].style.color= 'Blue';
-
-parent.firstElementChild.innerText = 'Child One';
-parent.lastElementChild.innerText = 'Child Three';
+function createListItem(item){
+ const li = document.createElement('')
 
 
-//Get Parent Element from child
+ li.innerHTML=`${item} <button> </button>`;
 
-const child = document.querySelector('.child');
+ document.querySelector(`.items`).appendChild(li);
+    
+}
 
-output = child.parentElement;
-child.parentElement.style.border='1px solid #ccc';
-child.parentElement.style.padding='1px';
+// clean & performance way
+function createNewItem(item){
+    const li = document.createElement('li');
 
-//Sibling Element
+    const button = document.createElement('button');
+    button.className = 'the class name from HTML'
 
-const secondItem = document.querySelector('.child:nth-child(2)');
+    const icon = document.createElement('i');
+    icon.className = 'icon ex fa-solid';
 
-output = secondItem;
-output = secondItem.nextElementSibling;
+    //Appneding
+    button.appendChild(icon);
+    li.appendChild(button);
 
-secondItem.nextElementSibling.style.color='green';
-secondItem.previousElementSibling.style.color='orange';
+    document.querySelector(`.items`).appendChild(li);
+}
 
-console.log(output);
+
+createNewItem('Cheese')
+
+createListItem('Egg')
