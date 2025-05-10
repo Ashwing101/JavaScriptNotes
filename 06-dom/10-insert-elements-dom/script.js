@@ -17,6 +17,7 @@ function insertText(){
     item.insertAdjacentText('afterend' , 'insertAdjacentText');
 }
 
+
 //insertAdjacentHTML Example
 
 function insertHtml(){
