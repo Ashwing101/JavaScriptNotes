@@ -26,6 +26,7 @@ function insertHtml(){
     clearBtn.insertAdjacentHTML('afterend' , '<h2>insertAdjacentHTML</h2>');
 }
 
+
 //insertBefore Example
 function insertBeforeItem(){
     const ul = document.querySelector('ul');
@@ -37,5 +38,3 @@ function insertBeforeItem(){
 
     ul.insertBefore(li, thirdItem);
 }
-
-
