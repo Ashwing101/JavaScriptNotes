@@ -1,5 +1,4 @@
 //insertAdjacentElement Example
-
 function insertElement(){
     const filter = document.querySelector('.filter');
 
