@@ -1,8 +1,8 @@
 //Get element by ID
 
-// console.log(document.getElementById('page-title'));
-// console.log(document.getElementById('page-title').id);
-// console.log(document.getElementById('page-title').getAttribute('id'));
+console.log(document.getElementById('page-title'));
+console.log(document.getElementById('page-title').id);
+console.log(document.getElementById('page-title').getAttribute('id'));
 
 //Set Attributes
 // document.getElementById('page-title').title ='My-List';
