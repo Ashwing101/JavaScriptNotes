@@ -16,4 +16,4 @@ document.body.appendChild(div);
 // document.querySelector
 
 
-//console.log(div);
+console.log(div);
