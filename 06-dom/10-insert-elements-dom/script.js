@@ -9,7 +9,6 @@ function insertElement(){
     filter.insertAdjacentElement('beforebegin'. h1);
 }
 
-
 //insertAdjacentText Example
 function insertText(){
     const item = document.querySelector('li:first-child');
